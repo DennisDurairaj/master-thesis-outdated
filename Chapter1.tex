@@ -47,60 +47,107 @@ Firstly, we need to think about the language, with a plethora of server-side lan
 \begin{enumerate}[a.]
 \item \textbf{PHP}
   \par
-  PHP is maybe the most popular language for web development. It’s pre-installed in almost all hosting services. It has a syntax very similar to C and Java, so coming from these languages is a plus in familiarity (it’s my case).
+  PHP was, and arguably still is one of the most popular languages for web development. It comes pre-installed with almost all hosting services. PHP has a syntax similar to C and Java, so coming from these languages makes it easier to work with PHP.
 
-  It started as a procedural language, making a transition to object orientation in version 4, and finally being a true object oriented language in version 5. Version 7 bring more features to the language, and makes great improvements to speed and memory consumption.
+  PHP started as a procedural language, then introduced object orientation in version 4, and with version 5 it finally became a true object oriented language. Version 7 brought more features and improvements to the language.
 
-  Facebook is built with PHP, although they wrote some libraries and compilers to optimize the speed.
-
-  The classic and popular frameworks for PHP are Zend Framework and Symfony. I have been using symfony 1.1, symfony 1.4 and Symfony2 for several projects, it was a very good tool.
-
-  Nowadays there are many good alternatives, such as Yii and Laravel.
+  PHP stands for Hypertext Preprocessor (it's a recursive acronym). It is used to develop dynamic and interactive content on the web and it is often used along with the Apache web server.
+  \begin{itemize}
+    \item Code written in PHP is not executed but interpreted at the server during runtime instead of being compiled by a computer's processor which reduces the stress on the client-side processing.
+    \item It is used to interact with content on webpages
+    \item  PHP is server-side as opposed to client-side, unlike some other web languages. When view the source code of a web page, you will observe that it may have been written in different languages including HTML and Javascript. However, the source code you will be seeing is client-side code i.e. the code that executes on the browser. A webpage written using PHP will not display the PHP source code used to create the page when you try to view the source code of the page. Even though PHP executes on the server and not the browser, the PHP files will be returned to the browser as plain HTML.
+  \end{itemize}
   \medbreak
 
-\item \textbf{Python}
+\item \textbf{Python - Django Framework}
   \par
-  Python is a language that uses a simpler syntax than PHP. It’s designed to have a very readable code, and for that reason is very recommended to learn programming.
+   Python is considered to be one of the most flexible and dynamic programming languages. It can be used for developing a wide variety of software applications. Python is further considered to be the best programming language for developing scientific applications and applications that are required to process a huge amount of data. Thus, the programming provides a much higher level of flexibility than PHP. Python is currently one of the most secure and robust programming languages. It security features make it one of the best languages for writing complex and mission-critical software applications.  Python was designed as a general-purpose programming language. The developers have to use add-on modules to easily write web applications in Python. They can still use a variety of third-party modules to use Python effectively for web development.
 
-  It’s well tested, Google chose it to develop their services, and that’s a good thing.
+   It’s well tested, Google chose it to develop their services, and that’s a good thing.
 
-  I haven’t used this language for any web application, but I used it to develop a tetris-clone game using the library Pygame.
+   The most popular framework for Python is
+   \textbf{Django}\footnote{\url{https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction}}.
+   Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. Built by experienced developers, Django takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It is free and open source, has a thriving and active community, great documentation, and many options for free and paid-for support.
 
-  The most popular framework for Python is Django.
+   \begin{enumerate}[i.]
+     \item \textbf{Complete}
+     \par
+     Django follows the "Batteries included" philosophy and provides almost everything developers might want to do "out of the box". Because everything you need is part of the one "product", it all works seamlessly together, follows consistent design principles, and has extensive and up-to-date documentation.
+     \item \textbf{Versatile}
+     \par
+     Django can be (and has been) used to build almost any type of website — from content management systems and wikis, through to social networks and news sites. It can work with any client-side framework, and can deliver content in almost any format (including HTML, RSS feeds, JSON, XML, etc). The site you are currently reading is based on Django!
+
+     Internally, while it provides choices for almost any functionality you might want (e.g. several popular databases, templating engines, etc.), it can also be extended to use other components if needed.
+     \item \textbf{Secure}
+     \par
+     Django helps developers avoid many common security mistakes by providing a framework that has been engineered to "do the right things" to protect the website automatically. For example, Django provides a secure way to manage user accounts and passwords, avoiding common mistakes like putting session information in cookies where it is vulnerable (instead cookies just contain a key, and the actual data is stored in the database) or directly storing passwords rather than a password hash.
+
+     A password hash is a fixed-length value created by sending the password through a cryptographic hash function. Django can check if an entered password is correct by running it through the hash function and comparing the output to the stored hash value. However due to the "one-way" nature of the function, even if a stored hash value is compromised it is hard for an attacker to work out the original password.
+
+     Django enables protection against many vulnerabilities by default, including SQL injection, cross-site scripting, cross-site request forgery and clickjacking (see Website security for more details of such attacks).
+     \item \textbf{Scalable}
+     \par
+     Django uses a component-based “shared-nothing” architecture (each part of the architecture is independent of the others, and can hence be replaced or changed if needed). Having a clear separation between the different parts means that it can scale for increased traffic by adding hardware at any level: caching servers, database servers, or application servers. Some of the busiest sites have successfully scaled Django to meet their demands (e.g. Instagram and Disqus, to name just two).
+     \item \textbf{Maintainable}
+     \par
+     Django code is written using design principles and patterns that encourage the creation of maintainable and reusable code. In particular, it makes use of the Don't Repeat Yourself (DRY) principle so there is no unnecessary duplication, reducing the amount of code. Django also promotes the grouping of related functionality into reusable "applications" and, at a lower level, groups related code into modules (along the lines of the Model View Controller (MVC) pattern).
+     \item \textbf{Portable}
+     \par
+     Django is written in Python, which runs on many platforms. That means that you are not tied to any particular server platform, and can run your applications on many flavours of Linux, Windows, and Mac OS X. Furthermore, Django is well-supported by many web hosting providers, who often provide specific infrastructure and documentation for hosting Django sites.
+   \end{enumerate}
   \medbreak
 
-\item \textbf{Ruby}
+\item \textbf{C\# - ASP .NET}
   \par
-  Ruby is designed to be a fun language. As the slogan says: a programmer’s best friend. It has a focus on simplicity and productivity with an elegant syntax.
+  \textbf{ASP .NET}\footnote{\url{https://nodejs.org/en/about/}} is an open-source server-side web application framework designed for web development to produce dynamic web pages. It was developed by Microsoft to allow programmers to build dynamic web sites, web applications and web services.
 
-  In Ruby everything is an object, and that’s interesting because it encourages to the programmer to think this way when developing.
-  But, in my opinion, the most amazing thing about Ruby is the community. There is a huge amount of libraries (called gems) that you can use in your projects, making development very fast. The popular gems (which are many and varied) are well maintained and constantly improved.
-  Twitter was built using Ruby, although now it’s rewritten in Java.
+  It was first released in January 2002 with version 1.0 of the .NET Framework, and is the successor to Microsoft's Active Server Pages (ASP) technology. ASP.NET is built on the Common Language Runtime (CLR), allowing programmers to write ASP.NET code using any supported .NET language.
 
-  The most popular framework for Ruby is, by far, Ruby on Rails, but for very small projects there is a popular micro-framework: Sinatra.
-  Micro-frameworks are designed for small applications, having few files and being easier to maintain than (mis)using a full framework.
+  ASP.NET's successor is ASP.NET Core. It is a re-implementation of ASP.NET as a modular web framework, together with other frameworks like Entity Framework. The new framework uses the new open-source .NET Compiler Platform and is cross platform. ASP.NET MVC, ASP.NET Web API, and ASP.NET Web Pages (a platform using only Razor pages) have merged into a unified MVC 6.
+
+  ASP.NET is a web development platform, which provides a programming model, a comprehensive software infrastructure and various services required to build up robust web applications for PC, as well as mobile devices.
+
+  ASP.NET works on top of the HTTP protocol, and uses the HTTP commands and policies to set a browser-to-server bilateral communication and cooperation.
+
+  ASP.NET is a part of Microsoft .Net platform. ASP.NET applications are compiled codes, written using the extensible and reusable components or objects present in .NET framework. These codes can use the entire hierarchy of classes in .NET framework.
+
+  The ASP.NET application codes can be written in any of the following languages:
+
+  C\#
+  Visual Basic.Net
+  Jscript
+  J\#
+  ASP.NET is used to produce interactive, data-driven web applications over the internet. It consists of a large number of controls such as text boxes, buttons, and labels for assembling, configuring, and manipulating code to create HTML pages.
   \medbreak
 
-\item \textbf{ASP .NET}
+\item \textbf{JavaScript - NodeJS}
   \par
-  ASP.NET is an open-source server-side web application framework designed for web development to produce dynamic web pages. It was developed by Microsoft to allow programmers to build dynamic web sites, web applications and web services.
-
-  It was first released in January 2002 with version 1.0 of the .NET Framework, and is the successor to Microsoft's Active Server Pages (ASP) technology. ASP.NET is built on the Common Language Runtime (CLR), allowing programmers to write ASP.NET code using any supported .NET language. The ASP.NET SOAP extension framework allows ASP.NET components to process SOAP messages.
-
-  ASP.NET's successor is ASP.NET Core. It is a re-implementation of ASP.NET as a modular web framework, together with other frameworks like Entity Framework. The new framework uses the new open-source .NET Compiler Platform (codename "Roslyn") and is cross platform. ASP.NET MVC, ASP.NET Web API, and ASP.NET Web Pages (a platform using only Razor pages) have merged into a unified MVC 6.
-  \medbreak
-
-\item \textbf{NodeJS}
-  \par
-  Node.js is an open-source, cross-platform JavaScript runtime environment for developing a diverse variety of tools and applications. Although Node.js is not a JavaScript framework,[4] many of its basic modules are written in JavaScript, and developers can write new modules in JavaScript. The runtime environment interprets JavaScript using Google's V8 JavaScript engine.
+  Node.js is an open-source, cross-platform JavaScript runtime environment for developing a diverse variety of tools and applications. Although Node.js is not a JavaScript framework,[4] many of its basic modules are written in JavaScript, and developers can write new modules in JavaScript. The runtime e nvironment interprets JavaScript using Google's V8 JavaScript engine.
 
   Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in Web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games).
 
-  The Node.js distributed development project, governed by the Node.js Foundation,[6] is facilitated by the Linux Foundation's Collaborative Projects program.
+  The Node.js distributed development project, governed by the Node.js Foundation, is facilitated by the Linux Foundation's Collaborative Projects program.
+
+  Node.js is a server-side platform built on Google Chrome's JavaScript Engine (V8 Engine). Node.js was developed by Ryan Dahl in 2009 and its latest version is v0.10.36. The definition of Node.js as supplied by its official \textbf{documentation}\footnote{\url{https://nodejs.org/en/about/}} is as follows −
+
+  "Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.""
+
+  Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.
+
+  Node.js also provides a rich library of various JavaScript modules which simplifies the development of web applications using Node.js to a great extent.
 \end{enumerate}
 
 \newpage
 \subsection{An Overview}
+\begin{center}
+\begin{tabular}{ |c|c|c| }
+ \hline
+ cell1 & cell2 & cell3 \\
+ cell4 & cell5 & cell6 \\
+ cell7 & cell8 & cell9 \\
+ \hline
+\end{tabular}
+\end{center}
 
 \begin{figure}[H]
 \centering
