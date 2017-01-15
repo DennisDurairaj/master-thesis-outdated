@@ -4,25 +4,24 @@
 
 \section{PDF - Portable Document Format}
 \par
-PDF was developed in the early 1990s as a way to share computer documents, including text formatting and inline images.
-In those early years before the rise of the World Wide Web and HTML documents, PDF was popular mainly in desktop publishing workflows.
+PDF was developed in the early 1990s as a way to share documents with people over different locations, which included formatting text as well as embedding inline images.
+Before the rise of the Internet and HTML, PDF was used mainly for publishing workflows.
 
 \bigbreak
 \textbf{Why Use PDF?}
 \par
-A properly prepared PDF will maintain the original fonts, images, graphics as well as the exact layout of the file (think of it as an electronic snapshot). A PDF file can be shared, viewed, and printed by anyone using the free Adobe Reader software regardless of the operating system, original design application or fonts.
-Originally PDF was mostly used by graphic artists, designers and publishers for producing color page proofs. With its evolving technology, however, today PDF is used for virtually any data that needs to be exchanged among applications and users. It is an open file format specification and PDF is available to anyone who wants to develop tools to create, view or manipulate PDF documents.
+A well structured PDF will maintain the original text format, images, as well as the keep perfect layout of the document. PDF was mostly used by graphic designers and publishers for producing color page documents and designs. A PDF file can be shared, viewed, and printed by anyone using the freely available PDF reading softwares without depending on the type of the operating system, the original design application or fonts. However, with the changes happening in technology, nowadays PDF is used for any type data to be shared between users or applications. It is an open source file format specification and PDF is freely available to people who want to create tools for developing, viewing or manipulating PDF documents.
 
 \bigbreak
 \textbf{Why is PDF important?}
 \par
-It is becoming increasingly easy to create PDF files as (from a user's stand-point) the process is almost as simple as printing. Essentially, anything that can be done with a sheet of paper can be done with a PDF. PDF technology is being used more frequently to produce offset printed documents (provided the designer properly embeds fonts and images).
-Adding to mainstream adoption, of course, is the fact that many applications allow users to save, import or export a document as a PDF (including popular publishing programs like QuarkXPress and CorelDraw), and you can also find a variety of third-party PDF conversion software tools available. With the capability to embed metadata (data about data) in a PDF file, along with the use of security options and electronic signatures PDF is also becoming a standard for data archiving. It may have taken a few years to perfect — and years of dedication by the development team at Adobe, but today more and more people are turning to PDF as the solution for something not even thought of in 1993.
+Today from a user's stand-point, it is becoming increasingly easier to create PDF files as the process is become as simple as printing a document. To put it in other words, anything that can be done with a piece of paper can be done with a PDF. Offset printed documents are using the technoligy of PDF more frequently.
+Adding to mainstream usage is the fact that a large number of applications allow users to save, upload or download a document as a PDF, and you can also find a variety of PDF conversion softwares tools freely available. With the power to embed metadata in a PDF document, along with the use of password protection options and electronic signatures, PDF is also being used as a standard for data archiving. It may have not been the perfect solution in the beginning — but with years of dedication and effort by the development team at Adobe, today a large number of people are turning to PDF as a solution for something no one thought of in the early 1900s.
 
 \bigbreak
 \textbf{Technical details about PDF}
 \par
-A PDF file is basically a 7-bit ASCII file, except for certain elements that may have binary content. A PDF file starts with a header containing the magic number and the version of the format such as PDF-1.7. The format is a subset of a COS ("Carousel" Object Structure) format.[15] A COS tree file consists primarily of objects, of which there are eight types:
+A PDF file is a 7-bit ASCII file, with the exception for certain elements that may have content in binary format. A PDF file begins with a header that contains a magic number and the version of the format. The format is a part of the COS ("Carousel" Object Structure) format. A COS tree file consists main of objects, of which there are eight types:
 
 \begin{itemize}
   \item Boolean values, representing true or false
@@ -36,6 +35,78 @@ A PDF file is basically a 7-bit ASCII file, except for certain elements that may
 \end{itemize}
 
 \section{Web Communication Methodologies}
+\par
+When facing frontend development, we start with the browser and the capabilities it offers. But with backend development, the field is much wider.
+
+\par
+Firstly, we need to think about the language, with a plethora of server-side language available today, it is sometimes a problem to choose one with each having its own advantages. The language you choose will determine the operating system to install in the server. A web framework is a set of tools that can be used to help ease the process of setting up the server, since it provides functions and methods for the developer to work with and instead of creating his own from scratch. Hence it solves many web development problems and provides a good structure to begin with. This accelerates a lot of the initial setup. We shall touch on some backend frameworks in the following sections.
+
+\bigbreak
+\textbf{Languages and Frameworks}
+\medbreak
+\begin{enumerate}[a.]
+\item \textbf{PHP}
+  \par
+  PHP is maybe the most popular language for web development. It’s pre-installed in almost all hosting services. It has a syntax very similar to C and Java, so coming from these languages is a plus in familiarity (it’s my case).
+
+  It started as a procedural language, making a transition to object orientation in version 4, and finally being a true object oriented language in version 5. Version 7 bring more features to the language, and makes great improvements to speed and memory consumption.
+
+  Facebook is built with PHP, although they wrote some libraries and compilers to optimize the speed.
+
+  The classic and popular frameworks for PHP are Zend Framework and Symfony. I have been using symfony 1.1, symfony 1.4 and Symfony2 for several projects, it was a very good tool.
+
+  Nowadays there are many good alternatives, such as Yii and Laravel.
+  \medbreak
+
+\item \textbf{Python}
+  \par
+  Python is a language that uses a simpler syntax than PHP. It’s designed to have a very readable code, and for that reason is very recommended to learn programming.
+
+  It’s well tested, Google chose it to develop their services, and that’s a good thing.
+
+  I haven’t used this language for any web application, but I used it to develop a tetris-clone game using the library Pygame.
+
+  The most popular framework for Python is Django.
+  \medbreak
+
+\item \textbf{Ruby}
+  \par
+  Ruby is designed to be a fun language. As the slogan says: a programmer’s best friend. It has a focus on simplicity and productivity with an elegant syntax.
+
+  In Ruby everything is an object, and that’s interesting because it encourages to the programmer to think this way when developing.
+  But, in my opinion, the most amazing thing about Ruby is the community. There is a huge amount of libraries (called gems) that you can use in your projects, making development very fast. The popular gems (which are many and varied) are well maintained and constantly improved.
+  Twitter was built using Ruby, although now it’s rewritten in Java.
+
+  The most popular framework for Ruby is, by far, Ruby on Rails, but for very small projects there is a popular micro-framework: Sinatra.
+  Micro-frameworks are designed for small applications, having few files and being easier to maintain than (mis)using a full framework.
+  \medbreak
+
+\item \textbf{ASP .NET}
+  \par
+  ASP.NET is an open-source server-side web application framework designed for web development to produce dynamic web pages. It was developed by Microsoft to allow programmers to build dynamic web sites, web applications and web services.
+
+  It was first released in January 2002 with version 1.0 of the .NET Framework, and is the successor to Microsoft's Active Server Pages (ASP) technology. ASP.NET is built on the Common Language Runtime (CLR), allowing programmers to write ASP.NET code using any supported .NET language. The ASP.NET SOAP extension framework allows ASP.NET components to process SOAP messages.
+
+  ASP.NET's successor is ASP.NET Core. It is a re-implementation of ASP.NET as a modular web framework, together with other frameworks like Entity Framework. The new framework uses the new open-source .NET Compiler Platform (codename "Roslyn") and is cross platform. ASP.NET MVC, ASP.NET Web API, and ASP.NET Web Pages (a platform using only Razor pages) have merged into a unified MVC 6.
+  \medbreak
+
+\item \textbf{NodeJS}
+  \par
+  Node.js is an open-source, cross-platform JavaScript runtime environment for developing a diverse variety of tools and applications. Although Node.js is not a JavaScript framework,[4] many of its basic modules are written in JavaScript, and developers can write new modules in JavaScript. The runtime environment interprets JavaScript using Google's V8 JavaScript engine.
+
+  Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in Web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games).
+
+  The Node.js distributed development project, governed by the Node.js Foundation,[6] is facilitated by the Linux Foundation's Collaborative Projects program.
+\end{enumerate}
+
+\newpage
+\subsection{An Overview}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/"frontback".png}
+\caption{IDEF0}
+\end{figure}
 
 \section{Current methods to convert data to PDF}
 
