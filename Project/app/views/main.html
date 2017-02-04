@@ -1,0 +1,27 @@
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="../images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<form>
+  <div class="form-group">
+    <label>Email address</label>
+    <input ng-model="vm.email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label>Name</label>
+    <input ng-model="vm.name" type="text" class="form-control" placeholder="Name">
+  </div>
+
+  <div class="form-group">
+    <label>Address</label>
+    <textarea ng-model="vm.address" class="form-control" rows="3"></textarea>
+  </div>
+
+  <button ng-click="vm.generatePDF()" type="submit" class="btn btn-primary">Submit</button>
+</form>
+<iframe id="outputPDF" type="application/pdf"></iframe>
